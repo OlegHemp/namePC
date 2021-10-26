@@ -16,7 +16,7 @@ if ($Env:windir -eq $dlg.SelectedPath)
     {
         $a = Get-ItemProperty -Path Registry::HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ComputerName\ComputerName
 ```
-Если нет, то подключаем файл реестра (выбранная_директория\system32\config\system) как куст реестра <i>HKLM\ZZzz</i>. 
+Если нет, то подключаем файл реестра (выбранная_директория\system32\config\system) как куст реестра <i>HKLM\ZZzz</i> работающей ОС. 
 Считываем имя компьютера в переменную $a  и отключаем куст реестра.
 ```powershell
 {
